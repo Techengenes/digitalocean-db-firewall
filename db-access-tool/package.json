@@ -1,0 +1,38 @@
+{
+  "name": "digitalocean-db-firewall",
+  "version": "1.0.0",
+  "description": "DigitalOcean database firewall IP management tool for CI/CD pipelines",
+  "main": "index.js",
+  "bin": {
+    "do-db-firewall": "./bin/do-db-firewall.sh"
+  },
+  "scripts": {
+    "postinstall": "chmod +x ./bin/do-db-firewall.sh"
+  },
+  "keywords": [
+    "digitalocean",
+    "database",
+    "firewall",
+    "ip-whitelisting",
+    "devops"
+  ],
+  "author": "Meshbot Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "preferGlobal": true,
+  "dependencies": {},
+  "peerDependencies": {
+    "curl": "*",
+    "jq": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Techengenes/digitalocean-db-firewall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Techengenes/digitalocean-db-firewall/issues"
+  },
+  "homepage": "https://github.com/Techengenes/digitalocean-db-firewall#readme"
+}
